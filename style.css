@@ -2,23 +2,24 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f9fbfd;
-  color: #222;
+  background: linear-gradient(135deg, #0d1b2a, #1b263b, #000000);
+  color: #f1f1f1;
   text-align: center;
   padding: 50px 20px;
+  min-height: 100vh;
 }
 
 /* Main heading */
 h1 {
-  font-size: 2.5rem;
-  color: #e63946;
+  font-size: 2.8rem;
+  color: #ff4d6d;
   margin-bottom: 10px;
 }
 
 /* Sub-text */
 p {
-  font-size: 1.1rem;
-  color: #555;
+  font-size: 1.2rem;
+  color: #a8dadc;
   margin-bottom: 30px;
 }
 
@@ -27,12 +28,13 @@ button {
   background: #457b9d;
   color: white;
   border: none;
-  padding: 12px 25px;
-  font-size: 1.1rem;
+  padding: 14px 30px;
+  font-size: 1.2rem;
   font-weight: bold;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
   transition: 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 button:hover {
@@ -40,10 +42,16 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* Changing text */
+/* Viral title text */
 h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-top: 40px;
-  color: #333;
-  transition: 0.3s ease-in-out;
+  color: #f1faee;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+/* Fade-in effect */
+.show {
+  opacity: 1;
 }
