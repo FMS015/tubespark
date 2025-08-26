@@ -9,7 +9,7 @@
 <body>
   <div class="container">
     <h1>🔥 <span class="brand">TubeSpark</span></h1>
-    <p>AI-powered YouTube Title & SEO Generator (Coming Soon!)</p>
+    <p>AI-powered YouTube Title & SEO Generator (Coming Soon!!!)</p>
     <a href="#" class="btn">🚀 Try Demo</a>
     <h2>The Ultimate Guide to Viral Titles 🔥</h2>
   </div>
