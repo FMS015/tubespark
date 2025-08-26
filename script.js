@@ -1,4 +1,4 @@
-// Array of demo viral titles
+// Demo viral titles
 const demoTitles = [
   "Boost Subscribers with AI-Powered Titles 🤖",
   "Get 1M Views with Smart SEO Tricks 🚀",
@@ -7,12 +7,21 @@ const demoTitles = [
   "The Secret Formula for YouTube Success ✨"
 ];
 
-// Pick the elements
 const button = document.getElementById("demoBtn");
 const titleText = document.getElementById("titleText");
 
-// Change text on button click
+// Function to change text with fade effect
 button.addEventListener("click", () => {
   const randomIndex = Math.floor(Math.random() * demoTitles.length);
-  titleText.textContent = demoTitles[randomIndex];
+  titleText.classList.remove("show"); // fade out
+
+  setTimeout(() => {
+    titleText.textContent = demoTitles[randomIndex];
+    titleText.classList.add("show"); // fade in
+  }, 300);
 });
+
+// First load: show the title with fade
+window.onload = () => {
+  titleText.classList.add("show");
+};
