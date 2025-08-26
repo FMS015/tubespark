@@ -1,16 +1,18 @@
-document.getElementById("demoBtn").addEventListener("click", function() {
-    const titles = [
-        "The Secret Formula to Go Viral 🔥",
-        "Boost Subscribers with AI-Powered Titles 🤖",
-        "10 Tricks YouTube Doesn’t Want You to Know 😱",
-        "How to Get 1,000 Subs in 30 Days 🚀",
-        "Unlock the Power of SEO for YouTube 📈",
-        "AI Creates the Perfect Viral Title ✨"
-    ];
+// Array of demo viral titles
+const demoTitles = [
+  "Boost Subscribers with AI-Powered Titles 🤖",
+  "Get 1M Views with Smart SEO Tricks 🚀",
+  "Viral YouTube Titles That Actually Work 🔥",
+  "Skyrocket Your Channel Growth with AI 📈",
+  "The Secret Formula for YouTube Success ✨"
+];
 
-    // Pick a random title from the list
-    const randomTitle = titles[Math.floor(Math.random() * titles.length)];
+// Pick the elements
+const button = document.getElementById("demoBtn");
+const titleText = document.getElementById("titleText");
 
-    // Replace the text on your site
-    document.getElementById("titleText").innerHTML = randomTitle;
+// Change text on button click
+button.addEventListener("click", () => {
+  const randomIndex = Math.floor(Math.random() * demoTitles.length);
+  titleText.textContent = demoTitles[randomIndex];
 });
